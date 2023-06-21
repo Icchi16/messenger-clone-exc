@@ -6,6 +6,7 @@ import { useForm, FieldValues, SubmitHandler } from "react-hook-form";
 import AuthSocialButton from "./authSocialButton";
 
 import { BsGithub, BsGoogle, BsFacebook } from "react-icons/bs";
+import axios from "axios";
 
 type Variant = "LOGIN" | "REGISTER";
 
@@ -37,7 +38,7 @@ const AuthForm = () => {
     setIsLoading(true);
 
     if (variant === "REGISTER") {
-      // Axios Reg
+      axios.post("/api/register", data);
     }
 
     if (variant === "LOGIN") {
@@ -55,7 +56,7 @@ const AuthForm = () => {
               label="Name"
               register={register}
               errors={errors}
-              disabled={isLoading }
+              disabled={isLoading}
             />
           )}
           <Input
