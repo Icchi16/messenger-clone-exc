@@ -20,7 +20,7 @@
     "clsx": "^1.2.1",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.6",
-    "next": "13.4.6",
+    "next": "^13.4.7",
     "next-auth": "^4.22.1",
     "next-superjson-plugin": "^0.5.8",
     "nextjs": "^0.0.3",
