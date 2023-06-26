@@ -9,7 +9,7 @@ interface avatarProps {
 
 const Avatar: React.FC<avatarProps> = ({ user }) => {
   return (
-    <div className="relative">
+    <div className="relative flex items-center">
       <div
         className="
         relative
