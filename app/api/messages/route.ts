@@ -14,28 +14,24 @@ export async function POST(request: Request) {
     }
 
     const newMessage = await prisma.message.create({
+      include: {
+        seen: true,
+        sender: true,
+      },
       data: {
         body: message,
         image: image,
         conversation: {
-          connect: {
-            id: conversationId,
-          },
+          connect: { id: conversationId },
         },
         sender: {
-          connect: {
-            id: currentUser.id,
-          },
+          connect: { id: currentUser.id },
         },
         seen: {
           connect: {
             id: currentUser.id,
           },
         },
-      },
-      include: {
-        seen: true,
-        sender: true,
       },
     });
 
