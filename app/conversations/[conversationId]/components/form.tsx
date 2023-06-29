@@ -74,6 +74,7 @@ const Form = () => {
           transition
           "
         >
+          <div className="sr-only">Submit</div>
           <HiMiniPaperAirplane size={18} className="text-white" />
         </button>
       </form>
