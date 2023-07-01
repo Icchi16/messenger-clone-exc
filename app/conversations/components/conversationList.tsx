@@ -9,6 +9,7 @@ import { useState } from "react";
 import { MdOutlineGroupAdd } from "react-icons/md";
 import ConversationBox from "./conversationBox";
 import GroupChatModal from "./groupChatModal";
+import { set } from "date-fns";
 
 interface ConversationListProps {
   users: User[];
@@ -31,7 +32,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
       <GroupChatModal
         users={users}
         isOpen={isModalOpen}
-        onClose={() => {}}
+        onClose={() => setIsModalOpen(false)}
       ></GroupChatModal>
 
       <aside
