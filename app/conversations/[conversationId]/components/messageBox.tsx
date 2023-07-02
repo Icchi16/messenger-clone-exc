@@ -42,7 +42,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ isLast, data }) => {
         <div className="flex items-center gap-1">
           <div className="text-sm text-gray-500">{data.sender.name}</div>
           <div className="text-xs text-gray-400">
-            {format(data.createdAt, "HH:mm")}
+            {format(new Date(data.createdAt), "p")}
           </div>
         </div>
         <div className={message}>
