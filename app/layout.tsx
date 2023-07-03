@@ -1,3 +1,4 @@
+import ActiveStatus from "./components/sideBar/activeStatus";
 import AuthContext from "./context/authContext";
 import ToasterContext from "./context/toasterContext";
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthContext>
           <ToasterContext />
+          <ActiveStatus />
           {children}
         </AuthContext>
       </body>
