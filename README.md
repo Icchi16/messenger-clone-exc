@@ -1,4 +1,4 @@
-## Deployment test on Vercel: https://messenger-clone-k0y83nskf-icchi16.vercel.app/
+## Deployment test on Vercel: https://messenger-clone-exc.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
